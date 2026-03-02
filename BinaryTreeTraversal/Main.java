@@ -5,8 +5,7 @@ import com.trees.node.TreeNode;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        TreeNode root=new TreeNode(10);
+	     TreeNode root=new TreeNode(10);
         root.right= new TreeNode(20);
         root.left= new TreeNode(5);
 
@@ -23,19 +22,19 @@ public class Main {
 
     }
     public static void postOrderTraversal(TreeNode node){
-        //pre-order traversal
+        //post-order traversal
         if(node==null)return;
-        System.out.println(node.value);
         postOrderTraversal(node.left);
         postOrderTraversal(node.right);
+		System.out.println(node.value);
 
 
     }
     public static void inOrderTraversal(TreeNode node){
-        //pre-order traversal
+        //In-order traversal
         if(node==null)return;
-        System.out.println(node.value);
         inOrderTraversal(node.left);
+		System.out.println(node.value);
         inOrderTraversal(node.right);
 
 
