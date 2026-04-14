@@ -58,6 +58,6 @@ public class SocialMediaApp {
 
         Set<User> common = findMutualFriends(myFriends, yourFriends);
 
-        System.out.println("🤝 Mutual Friends Found: " + common);
+        System.out.println(" Mutual Friends Found: " + common);
     }
 }
